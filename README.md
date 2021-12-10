@@ -13,7 +13,7 @@ Team Members (Name, Student ID, UCSD Email, Github Username):
 Proposal: A Gomoku (Five in a Row) game  
 
 
-Description: Gomoku (also known as Five In A Row, Gobang, Connect 5) is a purely strategic chess game where two people play against each other. Two sides use black and white chess pieces respectively, and place them on the intersection of vertical and horizontal lines of the chessboard. The side that first forms a horizontal, vertical, or diagonal line of five pieces wins. In our project, we decide to implement a Gomoku game by haskell. Our Gomoku game contains two kinds of mode. The first is player vs AI locally. The second is player vs player via network.
+Description: Gomoku (also known as Five In A Row, Gobang, Connect 5) is a purely strategic chess game where two people play against each other. Two sides use black and white (to make it clear in terminal we chose "X" and "O" to represent the two sides) chess pieces respectively, and place them on the intersection of vertical and horizontal lines of the chessboard. The side that first forms a horizontal, vertical, or diagonal line of five pieces wins. In our project, we decide to implement a Gomoku game by haskell. Our Gomoku game contains two kinds of mode. The first is player vs AI locally. The second is player vs player via network.
 
 <br/>
 Architecture: 
@@ -29,7 +29,8 @@ Architecture:
     <ul>
       <li>1. choose server or client you are</li>
       <li>2. wait until the connection is built and the board is formed</li>
-      <li>3. return the result when either side reaches 5 or there is no place to go (i.e. draw)</li>
+      <li>3. server will go first, then client. Both side will see itself as "X"</li>
+      <li>4. return the result when either side reaches 5 or there is no place to go (i.e. draw)</li>
     </ul>
   </ul>
 </ul>
